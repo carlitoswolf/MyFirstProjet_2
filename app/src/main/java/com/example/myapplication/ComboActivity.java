@@ -22,8 +22,9 @@ public class ComboActivity extends AppCompatActivity {
 
 
     SQLiteConexion conexion;
+
     Spinner comboPersona;
-    EditText nombres, apellidos, correo;
+    EditText nombres, apellidos, correo, hola;
 
     ArrayList<String> ArrayPeople;
     ArrayList<Personas> lista;
