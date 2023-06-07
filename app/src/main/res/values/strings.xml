@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="btnmostrar">Mostrar</string>
+
+    <string name="btninsert">Agregar</string>
+</resources>
