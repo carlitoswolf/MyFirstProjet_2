@@ -4,4 +4,6 @@
     <string name="btnmostrar">Mostrar</string>
 
     <string name="btninsert">Agregar</string>
+
+    <string name="btnphoto">Tomar Foto</string>
 </resources>
