@@ -10,7 +10,7 @@ import android.widget.Button;
 public class PrincipalActivity extends AppCompatActivity {
 
 
-    Button btnCrear, btnListPeople, btncombo;
+    Button btnCrear, btnListPeople, btncombo, btnImage;
 
 
     @Override
@@ -22,6 +22,7 @@ public class PrincipalActivity extends AppCompatActivity {
         btnCrear =  (Button) findViewById(R.id.btncrear);
         btnListPeople =  (Button) findViewById(R.id.btnlistpeople);
         btncombo =  (Button) findViewById(R.id.btnCombo);
+        btnImage =  (Button) findViewById(R.id.btnImagen);
 
         btnCrear.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,6 +44,14 @@ public class PrincipalActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ComboActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), PhotoActivity.class);
                 startActivity(intent);
             }
         });
