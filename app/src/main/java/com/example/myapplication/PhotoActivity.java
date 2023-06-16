@@ -97,7 +97,12 @@ public class PhotoActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
 
         if (requestCode == peticion_captura_imagen){
-            ObjectImage.setImageURI(data.getData());
+            Uri imageUrl = data.getData();
+            try {
+
+            } catch (Exception e){
+                throw new RuntimeException(e);
+            }
 
 //            Bundle extras = data.getExtras();
 //            Bitmap imagen = (Bitmap) extras.get("data");
